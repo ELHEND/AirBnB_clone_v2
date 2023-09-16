@@ -1,15 +1,17 @@
 #!/usr/bin/python3
-"""This is the city class"""
+"""This is city class"""
+
 from sqlalchemy.ext.declarative import declarative_base
 from models.base_model import BaseModel, Base
 from sqlalchemy import Column, Integer, String
 from sqlalchemy import ForeignKey
 from sqlalchemy.orm import relationship
+
 from models.place import Place
 
 
 class City(BaseModel, Base):
-    """This is the class for City
+    """This is class for City
     Attributes:
         state_id: The state id
         name: input name
