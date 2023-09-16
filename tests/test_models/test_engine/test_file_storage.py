@@ -1,13 +1,15 @@
 #!/usr/bin/python3
 """ Module for testing file storage"""
+
 import unittest
 from models.base_model import BaseModel
+
 from models import storage
 import os
 
 
 class test_fileStorage(unittest.TestCase):
-    """ Class to test the file storage method """
+    """ Class to test  file storage method """
 
     def setUp(self):
         """ Set up test environment """
@@ -70,7 +72,7 @@ class test_fileStorage(unittest.TestCase):
         self.assertEqual(new.to_dict()['id'], loaded.to_dict()['id'])
 
     def test_reload_empty(self):
-        """ Load from an empty file """
+        """ Load from  empty file """
         with open('file.json', 'w') as f:
             pass
         with self.assertRaises(ValueError):
