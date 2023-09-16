@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 """ """
+
 from models.base_model import BaseModel
 import unittest
 import datetime
@@ -40,44 +41,44 @@ class test_basemodel(unittest.TestCase):
 
     def test_default(self):
         """ """
-        i = self.value()
-        self.assertEqual(type(i), self.value)
+        m = self.value()
+        self.assertEqual(type(m), self.value)
 
     def test_kwargs(self):
         """ """
-        i = self.value()
-        copy = i.to_dict()
+        m = self.value()
+        copy = m.to_dict()
         new = BaseModel(**copy)
-        self.assertFalse(new is i)
+        self.assertFalse(new is m)
 
     def test_kwargs_int(self):
         """ """
-        i = self.value()
-        copy = i.to_dict()
+        m = self.value()
+        copy = m.to_dict()
         copy.update({1: 2})
         with self.assertRaises(TypeError):
             new = BaseModel(**copy)
 
     def test_save(self):
         """ Testing save """
-        i = self.value()
-        i.save()
-        key = self.name + "." + i.id
+        m = self.value()
+        m.save()
+        key = self.name + "." + m.id
         with open('file.json', 'r') as f:
             j = json.load(f)
-            self.assertEqual(j[key], i.to_dict())
+            self.assertEqual(j[key], m.to_dict())
 
     def test_str(self):
         """ """
-        i = self.value()
-        self.assertEqual(str(i), '[{}] ({}) {}'.format(self.name, i.id,
-                         i.__dict__))
+        m = self.value()
+        self.assertEqual(str(m), '[{}] ({}) {}'.format(self.name, m.id,
+                         m.__dict__))
 
     def test_todict(self):
         """ """
-        i = self.value()
-        n = i.to_dict()
-        self.assertEqual(i.to_dict(), n)
+        m = self.value()
+        n = m.to_dict()
+        self.assertEqual(m.to_dict(), n)
 
     def test_kwargs_none(self):
         """ """
