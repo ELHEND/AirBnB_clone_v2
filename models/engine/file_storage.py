@@ -1,6 +1,8 @@
 #!/usr/bin/python3
-"""This is the file storage class for AirBnB"""
+"""This is  file storage class for AirBnB"""
+
 import json
+
 from models.base_model import BaseModel
 from models.user import User
 from models.state import State
@@ -8,6 +10,7 @@ from models.city import City
 from models.amenity import Amenity
 from models.place import Place
 from models.review import Review
+
 import shlex
 
 
@@ -22,7 +25,7 @@ class FileStorage:
     __objects = {}
 
     def all(self, cls=None):
-        """returns a dictionary
+        """returns  dictionary
         Return:
             returns a dictionary of __object
         """
