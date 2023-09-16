@@ -1,6 +1,8 @@
 #!/usr/bin/python3
-"""This is the base model class for AirBnB"""
+"""This is  base model class for AirBnB"""
+
 from sqlalchemy.ext.declarative import declarative_base
+
 import uuid
 import models
 from datetime import datetime
@@ -65,7 +67,7 @@ class BaseModel:
         models.storage.save()
 
     def to_dict(self):
-        """creates dictionary of the class  and returns
+        """creates dictionary of class  and returns
         Return:
             returns a dictionary of all the key values in __dict__
         """
