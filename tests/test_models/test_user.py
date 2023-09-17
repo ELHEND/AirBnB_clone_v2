@@ -6,10 +6,10 @@ from models.user import User
 
 
 class test_User(test_basemodel):
-    """ """
+    """my test user """
 
     def __init__(self, *args, **kwargs):
-        """ """
+        """my function init """
         super().__init__(*args, **kwargs)
         self.name = "User"
         self.value = User
