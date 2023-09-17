@@ -7,7 +7,7 @@ import pycodestyle
 
 
 class test_City(test_basemodel):
-    """ """
+    """class information """
 
     def __init__(self, *args, **kwargs):
         """ """
