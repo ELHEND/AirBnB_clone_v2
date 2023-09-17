@@ -6,7 +6,7 @@ from models.review import Review
 
 
 class test_review(test_basemodel):
-    """ """
+    """my review function test """
 
     def __init__(self, *args, **kwargs):
         """ """
