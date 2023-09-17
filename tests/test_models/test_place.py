@@ -6,7 +6,7 @@ from models.place import Place
 
 
 class test_Place(test_basemodel):
-    """ """
+    """my test place function """
 
     def __init__(self, *args, **kwargs):
         """ """
