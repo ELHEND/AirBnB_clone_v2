@@ -9,7 +9,7 @@ class test_Place(test_basemodel):
     """my test place function """
 
     def __init__(self, *args, **kwargs):
-        """ """
+        """my init function """
         super().__init__(*args, **kwargs)
         self.name = "Place"
         self.value = Place
