@@ -116,7 +116,7 @@ class TestFileStorage(unittest.TestCase):
     """Test  FileStorage class"""
     @unittest.skipIf(storage_t != 'db', "not testing db storage")
     def test_all_returns_dict(self):
-        """Test that all returns a dictionaty"""
+        """Test that all returns  dictionaty"""
         self.assertIs(type(models.storage.all()), dict)
 
     @unittest.skipIf(storage_t != 'db', "not testing db storage")
@@ -125,7 +125,7 @@ class TestFileStorage(unittest.TestCase):
 
     @unittest.skipIf(storage_t != 'db', "not testing db storage")
     def test_new(self):
-        """test that new adds an object to the database"""
+        """test that new adds  object to the database"""
 
     @unittest.skipIf(storage_t != 'db', "not testing db storage")
     def test_save(self):
