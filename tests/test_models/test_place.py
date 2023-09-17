@@ -20,17 +20,17 @@ class test_Place(test_basemodel):
         self.assertEqual(type(new.city_id), str)
 
     def test_user_id(self):
-        """ """
+        """my test user id function """
         new = self.value()
         self.assertEqual(type(new.user_id), str)
 
     def test_name(self):
-        """ """
+        """my name test """
         new = self.value()
         self.assertEqual(type(new.name), str)
 
     def test_description(self):
-        """ """
+        """my description function test """
         new = self.value()
         self.assertEqual(type(new.description), str)
 
