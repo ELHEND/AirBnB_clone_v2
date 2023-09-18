@@ -20,14 +20,14 @@ class test_fileStorage(unittest.TestCase):
             del storage._FileStorage__objects[key]
 
     def tearDown(self):
-        """ Remove storage file at end of tests """
+        """ Remove storage file at end  of tests"""
         try:
             os.remove('file.json')
         except:
             pass
 
     def test_obj_list_empty(self):
-        """ __objects is initially empty """
+        """ __objects is initially  empty"""
         self.assertEqual(len(storage.all()), 0)
 
     def test_new(self):
@@ -67,8 +67,8 @@ class test_fileStorage(unittest.TestCase):
         new = BaseModel()
         storage.save()
         storage.reload()
-        for obj in storage.all().values():
-            loaded = obj
+        for ob in storage.all().values():
+            loaded = ob
         self.assertEqual(new.to_dict()['id'], loaded.to_dict()['id'])
 
     def test_reload_empty(self):

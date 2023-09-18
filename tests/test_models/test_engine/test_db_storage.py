@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Contains  TestDBStorageDocs and TestDBStorage classes
+Contains  Test DBStorageDocs and TestDBStorage classes
 """
 
 from datetime import datetime
@@ -68,7 +68,7 @@ test_db_storage.py'])
 #         """Test that save properly saves objects to file.json"""
 
 class TestDBStorageDocs(unittest.TestCase):
-    """Tests to check  documentation and style of DBStorage class"""
+    """Tests  checkes  documentation and style of DBStorage class"""
     @classmethod
     def setUpClass(cls):
         """Set up for doc tests"""
@@ -125,7 +125,7 @@ class TestFileStorage(unittest.TestCase):
 
     @unittest.skipIf(storage_t != 'db', "not testing db storage")
     def test_new(self):
-        """test that new adds  object to the database"""
+        """test that new adds  object to database"""
 
     @unittest.skipIf(storage_t != 'db', "not testing db storage")
     def test_save(self):
