@@ -45,7 +45,7 @@ class test_basemodel(unittest.TestCase):
         self.assertEqual(type(m), self.value)
 
     def test_kwargs(self):
-        """ """
+        """func kwargs test """
         m = self.value()
         copy = m.to_dict()
         new = BaseModel(**copy)
@@ -98,12 +98,12 @@ class test_basemodel(unittest.TestCase):
         self.assertEqual(type(new.id), str)
 
     def test_created_at(self):
-        """ """
+        """my created at function """
         new = self.value()
         self.assertEqual(type(new.created_at), datetime.datetime)
 
     def test_updated_at(self):
-        """ """
+        """my updated at fun test """
         new = self.value()
         self.assertEqual(type(new.updated_at), datetime.datetime)
         n = new.to_dict()
