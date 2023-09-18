@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" """
+"""this is basemodel func test"""
 
 from models.base_model import BaseModel
 import unittest
@@ -11,10 +11,10 @@ import pycodestyle
 
 
 class test_basemodel(unittest.TestCase):
-    """ """
+    """my clase basemodel func test """
 
     def __init__(self, *args, **kwargs):
-        """ """
+        """my function init """
         super().__init__(*args, **kwargs)
         self.name = 'BaseModel'
         self.value = BaseModel
