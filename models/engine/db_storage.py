@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" new class for sqlAlchemy """
+"""The new class for sqlAlchemy """
 
 from os import getenv
 from sqlalchemy.orm import sessionmaker, scoped_session
@@ -37,7 +37,7 @@ class DBStorage:
     def all(self, cls=None):
         """returns a dictionary
         Return:
-            returns a dictionary of __object
+            returns  dictionary of __object
         """
         dic = {}
         if cls:
