@@ -30,7 +30,7 @@ class test_basemodel(unittest.TestCase):
                          "Found code style errors (and warnings).")
 
     def setUp(self):
-        """ """
+        """my setUp func """
         pass
 
     def tearDown(self):
