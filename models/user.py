@@ -14,7 +14,7 @@ from models.review import Review
 
 
 class User(BaseModel, Base):
-    """This is the class for user
+    """This is  class for user
     Attributes:
         email: email address
         password: password for you login
