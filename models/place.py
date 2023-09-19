@@ -83,6 +83,6 @@ class Place(BaseModel, Base):
 
         @amenities.setter
         def amenities(self, obj=None):
-            """ Appends amenity ids to the attribute """
+            """ Appends amenity ids to attribute """
             if type(obj) is Amenity and obj.id not in self.amenity_ids:
                 self.amenity_ids.append(obj.id)
