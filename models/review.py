@@ -9,7 +9,7 @@ from sqlalchemy import Column, Integer, String, ForeignKey, Float
 
 
 class Review(BaseModel, Base):
-    """This is the class for Review
+    """This is class for Review
     Attributes:
         place_id: place id
         user_id: user id
