@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-"""Starts a Flask web application.
+"""Starts  Flask web application.
 
-The application listens on 0.0.0.0, port 5000.
+application listens on 0.0.0.0, port 5000.
 Routes:
     /: Displays 'Hello HBNB!'.
     /hbnb: Displays 'HBNB'.
@@ -29,7 +29,7 @@ def hbnb():
 
 @app.route("/c/<text>", strict_slashes=False)
 def c(text):
-    """Displays 'C' followed by the value of <text>.
+    """Displays 'C' followed by  value of <text>.
 
     Replaces any underscores in <text> with slashes.
     """
